@@ -10,7 +10,7 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: mypassword
+      MYSQL_ROOT_PASSWORD: Root12345@
       MYSQL_DATABASE: ecom
 
   api:
@@ -25,7 +25,7 @@ services:
     environment:
       DB_HOST: db
       DB_USER: root
-      DB_PASSWORD: mypassword
+      DB_PASSWORD: Root12345@
       DB_NAME: ecom
     links:
       - db
